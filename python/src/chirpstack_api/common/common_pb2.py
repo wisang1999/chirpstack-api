@@ -18,9 +18,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='chirpstack-api/common/common.proto',
   package='common',
   syntax='proto3',
-  serialized_options=b'Z.github.com/brocaar/chirpstack-api/go/v3/common',
+  serialized_options=b'Z1github.com/wisang1999/chirpstack-api/go/v3/common',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"chirpstack-api/common/common.proto\x12\x06\x63ommon\"1\n\x0bKeyEnvelope\x12\x11\n\tkek_label\x18\x01 \x01(\t\x12\x0f\n\x07\x61\x65s_key\x18\x02 \x01(\x0c\"{\n\x08Location\x12\x10\n\x08latitude\x18\x01 \x01(\x01\x12\x11\n\tlongitude\x18\x02 \x01(\x01\x12\x10\n\x08\x61ltitude\x18\x03 \x01(\x01\x12&\n\x06source\x18\x04 \x01(\x0e\x32\x16.common.LocationSource\x12\x10\n\x08\x61\x63\x63uracy\x18\x05 \x01(\r*\x1f\n\nModulation\x12\x08\n\x04LORA\x10\x00\x12\x07\n\x03\x46SK\x10\x01*v\n\x06Region\x12\t\n\x05\x45U868\x10\x00\x12\t\n\x05US915\x10\x02\x12\t\n\x05\x43N779\x10\x03\x12\t\n\x05\x45U433\x10\x04\x12\t\n\x05\x41U915\x10\x05\x12\t\n\x05\x43N470\x10\x06\x12\t\n\x05\x41S923\x10\x07\x12\t\n\x05KR920\x10\x08\x12\t\n\x05IN865\x10\t\x12\t\n\x05RU864\x10\n*\x8e\x01\n\x0eLocationSource\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x07\n\x03GPS\x10\x01\x12\n\n\x06\x43ONFIG\x10\x02\x12\x15\n\x11GEO_RESOLVER_TDOA\x10\x03\x12\x15\n\x11GEO_RESOLVER_RSSI\x10\x04\x12\x15\n\x11GEO_RESOLVER_GNSS\x10\x05\x12\x15\n\x11GEO_RESOLVER_WIFI\x10\x06\x42\x30Z.github.com/brocaar/chirpstack-api/go/v3/commonb\x06proto3'
+  serialized_pb=b'\n\"chirpstack-api/common/common.proto\x12\x06\x63ommon\"1\n\x0bKeyEnvelope\x12\x11\n\tkek_label\x18\x01 \x01(\t\x12\x0f\n\x07\x61\x65s_key\x18\x02 \x01(\x0c\"{\n\x08Location\x12\x10\n\x08latitude\x18\x01 \x01(\x01\x12\x11\n\tlongitude\x18\x02 \x01(\x01\x12\x10\n\x08\x61ltitude\x18\x03 \x01(\x01\x12&\n\x06source\x18\x04 \x01(\x0e\x32\x16.common.LocationSource\x12\x10\n\x08\x61\x63\x63uracy\x18\x05 \x01(\r*\x1f\n\nModulation\x12\x08\n\x04LORA\x10\x00\x12\x07\n\x03\x46SK\x10\x01*\x81\x01\n\x06Region\x12\t\n\x05\x45U868\x10\x00\x12\t\n\x05US915\x10\x02\x12\t\n\x05\x43N779\x10\x03\x12\t\n\x05\x45U433\x10\x04\x12\t\n\x05\x41U915\x10\x05\x12\t\n\x05\x43N470\x10\x06\x12\t\n\x05\x41S923\x10\x07\x12\t\n\x05KR920\x10\x08\x12\t\n\x05IN865\x10\t\x12\t\n\x05RU864\x10\n\x12\t\n\x05\x41S921\x10\x0b*\x8e\x01\n\x0eLocationSource\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x07\n\x03GPS\x10\x01\x12\n\n\x06\x43ONFIG\x10\x02\x12\x15\n\x11GEO_RESOLVER_TDOA\x10\x03\x12\x15\n\x11GEO_RESOLVER_RSSI\x10\x04\x12\x15\n\x11GEO_RESOLVER_GNSS\x10\x05\x12\x15\n\x11GEO_RESOLVER_WIFI\x10\x06\x42\x33Z1github.com/wisang1999/chirpstack-api/go/v3/commonb\x06proto3'
 )
 
 _MODULATION = _descriptor.EnumDescriptor(
@@ -106,11 +106,16 @@ _REGION = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='AS921', index=10, number=11,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=255,
-  serialized_end=373,
+  serialized_start=256,
+  serialized_end=385,
 )
 _sym_db.RegisterEnumDescriptor(_REGION)
 
@@ -160,8 +165,8 @@ _LOCATIONSOURCE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=376,
-  serialized_end=518,
+  serialized_start=388,
+  serialized_end=530,
 )
 _sym_db.RegisterEnumDescriptor(_LOCATIONSOURCE)
 
@@ -178,6 +183,7 @@ AS923 = 7
 KR920 = 8
 IN865 = 9
 RU864 = 10
+AS921 = 11
 UNKNOWN = 0
 GPS = 1
 CONFIG = 2

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package common;
 
-option go_package = "github.com/brocaar/chirpstack-api/go/v3/common";
+option go_package = "github.com/wisang1999/chirpstack-api/go/v3/common";
 
 
 enum Modulation {
@@ -43,6 +43,9 @@ enum Region {
 
     // RU864
     RU864 = 10;
+
+    // AS921
+    AS921 = 11;
 }
 
 
